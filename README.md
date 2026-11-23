@@ -1,5 +1,7 @@
 # 📰 Online News Popularity — Which News Will Go Viral?
 
+**English** · [العربية](README.ar.md)
+
 Binary classification of Mashable articles into **High** vs **Low** popularity using article content, metadata, and publishing time. The project covers the full data-science workflow: EDA → cleaning → factor analysis → feature selection → modeling → evaluation → model export.
 
 ## Results

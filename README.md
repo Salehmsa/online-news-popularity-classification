@@ -15,6 +15,15 @@ Binary classification of Mashable articles into **High** vs **Low** popularity u
 
 ![Random Forest evaluation](assets/rf_confusion_roc.png)
 
+## Interactive dashboard
+A self-contained, bilingual (English / Arabic) HTML dashboard built from the same data and model:
+filter by channel, weekday, images, videos, links, article length, title length and tone; see KPIs update live;
+get **data-driven recommendations** and a **best-performing playbook** for the slice you choose; compare the models.
+
+**Live:** https://salehmsa.github.io/online-news-popularity-classification/ &nbsp;·&nbsp; **File:** [`docs/index.html`](docs/index.html) (open it directly in any browser, no server needed)
+
+![Dashboard preview](assets/dashboard_preview.png)
+
 ## Dataset
 [UCI – Online News Popularity](https://archive.ics.uci.edu/dataset/332/online+news+popularity): 39,644 Mashable articles, 58 predictive features (content, keywords, topics/LDA, sentiment, channel, weekday) and the target `shares`. A copy lives in [`data/`](data/); the notebook also downloads it from UCI automatically (`python scripts/download_data.py` does the same).
 
@@ -49,6 +58,7 @@ Binary classification of Mashable articles into **High** vs **Low** popularity u
 ## Project structure
 ```
 .
+├── docs/index.html                        # interactive dashboard (GitHub Pages)
 ├── notebooks/
 │   └── News_Popularity_Prediction.ipynb   # full analysis
 ├── data/                                  # OnlineNewsPopularity.csv + data README
